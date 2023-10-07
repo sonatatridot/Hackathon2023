@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../../assets/fonts//Roboto/Roboto-Black.ttf) format('ttf');
+  }
+
+.bgimage {
+    background-image: url("../../../assets/images/bangaloreTr.png");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 72vh;
+  opacity:0.5;
+}
+.content {
+    border: 1px solid black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 30%;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 10px;
+    padding:35px;
+    font-size: 18px;
+}
+.content h1 {
+    font-family: Roboto;
+    font-weight:bold;
+    color:#d71207;
+}
+.btn-color {
+    background-color:#d71207;
+    color:#fff;
+}
+
+.content-container {
+    margin-top:20px;
+}
+.linkFont {
+    font-size:16px;
+    color:#000;
+}
+.copyFont {
+    font-size:14px;
+    color: #ccc;
+    margin-top:20px;
+}
+.success {
+    color:#f3817b;
+}
+.parkingPrice {
+    border: 1px solid #ccc;
+    padding: 20px;
+}

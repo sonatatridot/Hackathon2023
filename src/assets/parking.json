@@ -1,0 +1,230 @@
+[
+    {
+        "id": 1,
+        "city": "Bangalore",
+        "areas": [
+            {
+                "areaName": "Malleshwaram",
+                "totalParkingSlots": 300,
+                "totalBookedSlots": 250,
+                "totalAvailableSlots": 50,
+                "streets": [
+                    {
+                        "streetName": "III Main, 5th Cross",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    },
+                    {
+                        "streetName": "II Main, 10th Cross",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "areaName": "Jayanagar",
+                "totalParkingSlots": 100,
+                "totalBookedSlots": 50,
+                "totalAvailableSlots": 50,
+                "streets": [
+                    {
+                        "streetName": "4th Block",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    },
+                    {
+                        "streetName": "3rd Block",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "city": "Hyderabad",
+        "areas": [
+            {
+                "areaName": "Ciberabad",
+                "totalParkingSlots": 200,
+                "totalBookedSlots": 150,
+                "totalAvailableSlots": 50,
+                "streets": [
+                    {
+                        "streetName": "Hitech City",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    },
+                    {
+                        "streetName": "Shilpakala vedika",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "areaName": "KBHP",
+                "totalParkingSlots": 100,
+                "totalBookedSlots": 50,
+                "totalAvailableSlots": 50,
+                "streets": [
+                    {
+                        "streetName": "Cafe point",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    },
+                    {
+                        "streetName": "Shopping mall road",
+                        "parkingSlots": [
+                            {
+                                "slotId": 1,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            },
+                            {
+                                "slotId": 2,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": false
+                            },
+                            {
+                                "slotId": 3,
+                                "latitude": "",
+                                "longitude": "",
+                                "status": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

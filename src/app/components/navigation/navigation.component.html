@@ -1,0 +1,35 @@
+<div class="container bgimage">
+    
+</div>
+<div class="container content">
+     <h1>JALDI PARKING</h1>
+     <div class="content-container">
+        <h5 class="text-center">GOOGLE MAPS WEBSERVICE IMPLEMENTATION</h5>
+        <h6 class="text-center mt20 success">You have reached to your parking slot</h6>
+        <div class="text-center mt30">
+            <button type="button" class="btn col-md-4 mr5 btn-color" (click)="parkClick()">Park Now</button>
+        </div>
+        <div class="parkingPrice mt30" *ngIf="parkingPrice">
+             <h5>Parking price:<strong> Rs. 50 per hour</strong></h5>
+             <div class="mb-3 mt20">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Choose Timing</option>
+                    <option value="1">1 hr</option>
+                    <option value="2">2 hrs</option>
+                    <option value="3">4 hrs</option>
+                    <option value="3">6 hrs</option>
+                    <option value="3">8 hrs</option>
+                    <option value="3">Full Day</option>
+                </select>
+            </div>
+            <div class="text-center mt30">
+                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="confirmClick()">Make Payment</button>
+            </div>
+        </div>
+        <div class="text-center col-md-12">
+            <p class="copyFont">Copyright to &copy; Kishan & Team</p>
+        </div>
+      </div>
+</div>
+
+

@@ -1,0 +1,81 @@
+<div class="container bgimage">
+    
+</div>
+<div class="container content">
+     <h1>JALDI PARKING</h1>
+     <h3 class="mt30">Search Parking</h3>
+     <div class="content-container">
+        <div class="mb-3" *ngIf="searchPanel">
+            <label for="email" class="form-label">City</label>
+            <select class="form-select" aria-label="Default select example" 
+             (change)="onCityChange($event)">
+                <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+            </select>
+        </div>
+        <div class="mb-3" *ngIf="searchPanel">
+            <label for="password" class="form-label">Area</label>
+            <select class="form-select" aria-label="Default select example" (change)="onAreaChange($event)">
+                <option *ngFor="let area of areas" [value]="area.areaName">{{ area.areaName }}</option>
+            </select>
+        </div>
+        <div class="mb-3" *ngIf="searchPanel">
+            <label for="password" class="form-label">Street</label>
+            <select class="form-select" aria-label="Default select example">
+                <option *ngFor="let stree of street" [value]="stree.streetName">{{ stree.streetName }}</option>
+            </select>
+        </div>
+        <div class="text-center mt30" *ngIf="searchPanel">
+            <button type="button" class="btn col-md-4 mr5 btn-color" (click)="goClick()">GO</button>
+        </div>
+        <div class="parking col-md-12" *ngIf="parkingSlots">
+            <h3 class="text-center">Parking Slots</h3>
+            <p class="mt30">City: <strong>Bangalore</strong></p>
+            <p>Area: <strong>Jayanagar</strong></p>
+            <p>Street: <strong>I Block</strong></p>
+            <p>Total Number of Slots: <strong>300</strong></p>
+            <p>Booked Slots: <strong>250</strong></p>
+            <p>Available Slots: <strong>50</strong></p>
+            <h5 class="mt30">Select the Slot</h5>
+            <ul>
+                <li  [ngClass]="slot ? 'parkedSlotActive' : 'parkedSlot'" class="parkedSlot" (click)="slotClick()">JBI-1</li>
+                <li class="parkedSlot">JBI-2</li>
+                <li class="parkedSlot">JBI-3</li>
+                <li class="parkedSlot">JBI-4</li>
+                <li class="parkedSlot">JBI-5</li>
+                <li class="parkedSlot">JBI-6</li>
+                <li class="parkedSlot">JBI-7</li>
+                <li class="parkedSlot">JBI-8</li>
+                <li class="parkedSlot">JBI-9</li>
+                <li class="parkedSlot">JBI-10</li>
+                <li class="parkedSlot">JBI-11</li>
+                <li class="parkedSlot">JBI-12</li>
+                <li class="parkedSlot">JBI-13</li>
+            </ul>
+        </div>
+        <div class="col-md-12 navig" *ngIf="parkingSlots"> 
+            <div class="text-center">
+                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="carcompleteDetails()">Your Car Details</button>
+            </div>
+        </div>
+        <div class="col-md-12 row navigstart" *ngIf="carDetails">
+            <div class="col-md-6">
+                <h5>Your Current Location</h5>
+                <p>Bagalur Cross</p>
+                <p>Your Fast Tag Balance: <strong>Rs.300</strong></p>
+            </div>
+            <div class="col-md-6">
+                <h5>Parking Slot Location</h5>
+                <p>Jayanagar - Block I</p>
+                <p>Parking Price: <strong>Rs.50 per hour</strong></p>
+            </div>
+            <div class="text-center mt30">
+                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="startClick()">Start</button>
+            </div>
+        </div>
+        <div class="text-center col-md-12">
+            <p class="copyFont">Copyright to &copy; Kishan & Team</p>
+        </div>
+      </div>
+</div>
+
+
