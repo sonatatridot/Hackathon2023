@@ -15,12 +15,14 @@
         <div class="mb-3" *ngIf="searchPanel">
             <label for="password" class="form-label">Area</label>
             <select class="form-select" aria-label="Default select example" (change)="onAreaChange($event)">
+                <option>Select</option>
                 <option *ngFor="let area of areas" [value]="area.areaName">{{ area.areaName }}</option>
             </select>
         </div>
         <div class="mb-3" *ngIf="searchPanel">
             <label for="password" class="form-label">Street</label>
             <select class="form-select" aria-label="Default select example">
+                <option>Select</option>
                 <option *ngFor="let stree of street" [value]="stree.streetName">{{ stree.streetName }}</option>
             </select>
         </div>

@@ -16,7 +16,7 @@ export class SearchParkingComponent implements OnInit {
   slot:boolean = false;
   parkingDetails:any = [];
   selectedCity:any;
-  cities:any = ["Bangalore", "Hyderabad", "Chennai", "Mumbai", "Delhi"];
+  cities:any = ["Select", "Bangalore", "Hyderabad", "Chennai", "Mumbai", "Delhi"];
   areas:any = [];
   street:any = [];
 
@@ -31,6 +31,7 @@ export class SearchParkingComponent implements OnInit {
   
   onCityChange(city:any) {
     this.street = [];
+    this.areas = [];
     console.log(city.target.value);
     console.log("Hello");
     console.log(this.parkingDetails);
