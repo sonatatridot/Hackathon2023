@@ -3,7 +3,7 @@
 </div>
 <div class="container content">
     <div class="text-center">
-        <img src="../../../assets/images/parkit.png" />
+        <img src="../../../assets/images/parking2.png" />
      </div>
      <div class="content-container">
         <div class="parkingPrice mt30">
@@ -17,7 +17,22 @@
                 <p>End Time: <strong>14:23</strong></p>
             </div>
             <div class="text-center mt30">
-                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="searchClick()">Search Parking Slot</button>
+                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="getCarDetails()">Get Car Details</button>
+            </div>
+            <div class="col-md-12 row navigstart" *ngIf="carDetails">
+                <div class="col-md-6">
+                    <h5>Your Current Location</h5>
+                    <p>Bagalur Cross</p>
+                    <p>Your Fast Tag Balance: <strong>Rs.300</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Parking Slot Location</h5>
+                    <p>Jayanagar - Block I</p>
+                    <p>Parking Price: <strong>Rs.50 per hour</strong></p>
+                </div>
+                <div class="text-center mt30">
+                    <button type="button" class="btn col-md-4 mr5 btn-color" (click)="startClick()">Start</button>
+                </div>
             </div>
         </div>
         <div class="text-center col-md-12">

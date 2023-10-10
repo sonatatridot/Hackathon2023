@@ -10,11 +10,19 @@ export class ConfirmationComponent implements OnInit {
 
   constructor(private router:Router) { }
 
+  carDetails: boolean = false;
+
   ngOnInit(): void {
   }
 
   searchClick() {
     this.router.navigate([`${'search'}`]);
   }
-
+  
+  getCarDetails() {
+    this.carDetails = true;
+  }
+  startClick() {
+    this.router.navigate([`${'navigation'}`]);
+}
 }

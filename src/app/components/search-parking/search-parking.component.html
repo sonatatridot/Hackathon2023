@@ -3,7 +3,7 @@
 </div>
 <div class="container content">
     <div class="text-center">
-        <img src="../../../assets/images/parkit.png" />
+        <img src="../../../assets/images/parking2.png" />
      </div>
      <h3 class="mt30">Search Parking</h3>
      <div class="content-container">
@@ -56,12 +56,29 @@
                 <li class="parkedSlot">JBI-13</li>
             </ul>
         </div>
+        <div class="parkingPrice mt30" *ngIf="parkingSlots">
+            <h5>Parking price:<strong> Rs. 50 per hour</strong></h5>
+            <div class="mb-3 mt20">
+               <select class="form-select" aria-label="Default select example">
+                   <option selected>Choose Timing</option>
+                   <option value="1">1 hr</option>
+                   <option value="2">2 hrs</option>
+                   <option value="3">4 hrs</option>
+                   <option value="3">6 hrs</option>
+                   <option value="3">8 hrs</option>
+                   <option value="3">Full Day</option>
+               </select>
+           </div>
+           <!-- <div class="text-center mt30">
+               <button type="button" class="btn col-md-4 mr5 btn-color" (click)="confirmClick()">Make Payment</button>
+           </div> -->
+       </div>
         <div class="col-md-12 navig" *ngIf="parkingSlots"> 
             <div class="text-center">
-                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="carcompleteDetails()">Your Car Details</button>
+                <button type="button" class="btn col-md-4 mr5 btn-color" (click)="confirmClick()">Make payment</button>
             </div>
         </div>
-        <div class="col-md-12 row navigstart" *ngIf="carDetails">
+        <!-- <div class="col-md-12 row navigstart" *ngIf="carDetails">
             <div class="col-md-6">
                 <h5>Your Current Location</h5>
                 <p>Bagalur Cross</p>
@@ -75,7 +92,7 @@
             <div class="text-center mt30">
                 <button type="button" class="btn col-md-4 mr5 btn-color" (click)="startClick()">Start</button>
             </div>
-        </div>
+        </div> -->
         <div class="text-center col-md-12">
             <p class="copyFont">Copyright to &copy; Kishan & Team</p>
         </div>

@@ -67,5 +67,8 @@ export class SearchParkingComponent implements OnInit {
   startClick() {
       this.router.navigate([`${'navigation'}`]);
   }
+  confirmClick() {
+    this.router.navigate([`${'confirmation'}`]);
+  }
 
 }

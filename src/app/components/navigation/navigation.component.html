@@ -3,15 +3,16 @@
 </div>
 <div class="container content">
     <div class="text-center">
-        <img src="../../../assets/images/parkit.png" />
+        <img src="../../../assets/images/parking2.png" />
      </div>
      <div class="content-container">
         <h5 class="text-center">GOOGLE MAPS WEBSERVICE IMPLEMENTATION</h5>
         <h6 class="text-center mt20 success">You have reached to your parking slot</h6>
         <div class="text-center mt30">
             <button type="button" class="btn col-md-4 mr5 btn-color" (click)="parkClick()">Park Now</button>
+            <button type="button" class="btn col-md-4 mr5 btn-color" (click)="searchClick()">Parking Slot Search</button>
         </div>
-        <div class="parkingPrice mt30" *ngIf="parkingPrice">
+        <!-- <div class="parkingPrice mt30" *ngIf="parkingPrice">
              <h5>Parking price:<strong> Rs. 50 per hour</strong></h5>
              <div class="mb-3 mt20">
                 <select class="form-select" aria-label="Default select example">
@@ -27,7 +28,7 @@
             <div class="text-center mt30">
                 <button type="button" class="btn col-md-4 mr5 btn-color" (click)="confirmClick()">Make Payment</button>
             </div>
-        </div>
+        </div> -->
         <div class="text-center col-md-12">
             <p class="copyFont">Copyright to &copy; Kishan & Team</p>
         </div>

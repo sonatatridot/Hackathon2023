@@ -22,5 +22,8 @@ export class NavigationComponent implements OnInit {
   parkClick() {
     this.parkingPrice = true;
   }
+  searchClick() {
+    this.router.navigate([`${'search'}`]);
+  }
 
 }
